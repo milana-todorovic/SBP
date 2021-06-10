@@ -20,7 +20,10 @@ class StreamParser:
                 reader = csv.DictReader(csv_file, fieldnames=['stream_id', 'current_views', 'start_time', 'game', 'broadcaster_id', 'broadcaster_name', 'delay_setting', 'follower_number', 'partner', 'broadcaster_language', 'total_views', 'language', 'broadcaster_created', 'bitrate', 'resolution'], delimiter='\t')
                 for row in reader:
                     if row['game'] in games:
-                        streams.append(get_stream(timestamp, row, games[row['game']]))
+                        try:
+                            streams.append(get_stream(timestamp, row, games[row['game']]))
+                        except:
+                            print("Bad row")
             
             if (len(streams) > 0):
                 db['streams'].insert_many(streams)

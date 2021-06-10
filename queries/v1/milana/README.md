@@ -16,7 +16,7 @@ db.getCollection('streams').aggregate([
 Rezultat upita:<br>
 ![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/milana/1.PNG?raw=true "Rezultat upita")
 
-### Pronaći 5 igara koje su prenošene najveći broj minuta. - 186 sekunda 
+### 2. Pronaći 5 igara koje su prenošene najveći broj minuta. - 186 sekunda 
 
 ```
 db.getCollection('streams').aggregate([
@@ -32,7 +32,7 @@ db.getCollection('streams').aggregate([
 Rezultat upita:<br>
 ![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/milana/2.PNG?raw=true "Rezultat upita")
 
-### Koliki je broj prenosa, i prosjek, minimum, i maksimum prosječnog broja gledalaca po prenosu za svaku igru? - 187 sekunda 
+### 3. Koliki je broj prenosa, i prosjek, minimum, i maksimum prosječnog broja gledalaca po prenosu za svaku igru? - 187 sekunda 
 
 ```
 db.getCollection('streams').aggregate([

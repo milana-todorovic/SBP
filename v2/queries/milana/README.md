@@ -12,7 +12,7 @@ db.getCollection('games-broadcasters').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v2/milana/1.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](./1.PNG?raw=true "Rezultat upita")
 
 ### 2. Pronaći 5 igara koje su prenošene najveći broj minuta. - 0.899 sekunda 
 
@@ -26,7 +26,7 @@ db.getCollection('games-broadcasters').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v2/milana/2.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](./2.PNG?raw=true "Rezultat upita")
 
 ### 3. Koliki je broj prenosa, i prosjek, minimum, i maksimum prosječnog broja gledalaca po prenosu za svaku igru? - 13.2 sekunda 
 
@@ -41,7 +41,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v2/milana/3.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](./3.PNG?raw=true "Rezultat upita")
 
 ### 4. Za svaki žanr odrediti prosječno i maksimalno trajanje prenosa, i prosječni broj gledalaca po prenosu. - 17.4 sekunda 
 
@@ -56,7 +56,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v2/milana/4.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](./4.PNG?raw=true "Rezultat upita")
 
 ### 5. Za sve autore koji su najveći broj minuta igrali igru The Evil Within, a pored toga su igrali bar još jednu igru, pronaći koje su još igre igrali, u koliko prenosa, koliko ukupno minuta, i koliko minuta u prosjeku po prenosu. - 5.27 sekundi sa indeksom
 
@@ -74,4 +74,4 @@ db.getCollection('games-broadcasters').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v2/milana/5.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](./5.PNG?raw=true "Rezultat upita")

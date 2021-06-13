@@ -13,7 +13,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/ana/1.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/v1/queries/ana/1.PNG?raw=true "Rezultat upita")
 
 ### 2. Za svakog autora odrediti koju je igru igrao najveći broj minuta. - 198 sekunda 
 
@@ -30,7 +30,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/ana/2.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/v1/queries/ana/2.PNG?raw=true "Rezultat upita")
 
 ### 3. Za svaki sat u danu pronaći koja je igra imala u prosjeku najviše prenosa.- 151 sekunda 
 
@@ -48,7 +48,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/ana/3.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/v1/queries/ana/3.PNG?raw=true "Rezultat upita")
 
 ### 4. Koje igre je prenosio autor koji je ostvario najveći rast broja pratilaca u posmatranom vremenskom periodu? - 463 sekunda 
 
@@ -64,7 +64,7 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/ana/4.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/v1/queries/ana/4.PNG?raw=true "Rezultat upita")
 
 ### 5. Koje žanrove je prenosio najveći broj autora? - 186 sekunda 
 
@@ -79,4 +79,4 @@ db.getCollection('streams').aggregate([
 ```
 
 Rezultat upita:<br>
-![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/queries/v1/ana/5.PNG?raw=true "Rezultat upita")
+![Rezulztat upita](https://github.com/milana-todorovic/SBP/blob/main/v1/queries/ana/5.PNG?raw=true "Rezultat upita")

@@ -32,11 +32,10 @@ Rezultat upita:<br>
 
 ```
 db.getCollection('streams').aggregate([
-    {$project: {_id: 0, genres: "$game.genres", views: {$divide: ["$view_sum", "$timestamp_count"]}, duration_in_minutes: 1}},
-    {$unwind: "$genres"},
-    {$group: {_id: "$genres", average_stream_duration: {$avg: "$duration_in_minutes"}, max_stream_duration: {$max: "$duration_in_minutes"}, average_views: {$avg: "$views"}}},
-    {$sort: {"average_stream_duration": -1}},
-    {$project: {genre: "$genres", average_stream_duration: 1, max_stream_duration: 1, average_views: 1}}
+    {$project: {game: "$game.name", average_views: {$divide: ["$view_sum", "$timestamp_count"]}}},
+    {$group: {_id: "$game", average_views: {$avg: "$average_views"}, max_views: {$max: "$average_views"}, min_views: {$min: "$average_views"}, count: {$sum: 1}}},
+    {$sort: {"average_views": -1}},
+    {$project: {_id: 0, game: "$_id", max_views_per_stream: "$max_views", average_views_per_stream: "$average_views", min_views_per_stream: "$min_views", number_of_streams: "$count"}}
 ], {allowDiskUse: true})
 ```
 

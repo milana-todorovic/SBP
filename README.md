@@ -37,3 +37,8 @@ Druga šema baze podataka kreirana je transformacijom prve šeme, uz upotrebu š
 Detalji imlementacije upita nad prvom šemom dostupni su u [v1/queries](./v1/queries), a detalji implementacije nad drugom šemom u [v2/queries](./v2/queries).
 
 #### Performanse
+
+Procjena performansi izvršena je pomoću metode <code>explain("executionStats")</code> koju nudi MongoDB. Na graficima je prikazano izmjereno vrijeme izvršavanja upita nad prvom i drugom verzijom baze, kao i broj dokumenata na ulazu u upit.
+
+![Vrijeme izvršavanja](./vrijeme_izvrsavanja.PNG?raw=true "Vrijeme izvršavanja")
+![Broj dokumenata](./broj_dokumenata.PNG?raw=true "Broj dokumenata")
